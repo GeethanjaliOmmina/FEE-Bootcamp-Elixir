@@ -1,0 +1,52 @@
+h1 {
+    text-align: center;
+    font-family: 'TimesNewRoman';
+    font-size: 53px;
+}
+div {
+  text-align: center;
+  margin: 0px auto;
+    text-align: center;
+  margin: auto;
+}
+body {
+    background-image:url("background.jpg");
+}
+
+.cell {
+  width:80px;
+  height:80px;
+  border: 5px solid #000000;
+  background: #FFFFFF;
+  font-size: 46pt;
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+
+}
+
+fieldset {
+  text-align: center;
+  margin: auto;
+}
+
+.cell:hover {
+  background: #C2DBFC;
+  text-align: center;
+}
+#reset{
+  
+  background-color:black;
+  border: none;
+  color:white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:2vw;
+}
+table{
+  width:30vw;
+  height:50vh;
+}
