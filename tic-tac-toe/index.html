@@ -1,41 +1,43 @@
 <html>
-        <head>
-            <meta charset="utf-8" />
-            <title>Tic-Tac-Toe</title>
-            <link rel="stylesheet" type="text/css" href="style.css">
-            <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-            <script type="text/javascript" src="game.js"></script>
-        </head>
-        <body>
-        
-        <h1>Tic-Tac-Toe
-          <img src="titleimage.jpg" alt="tictactoe" height="60" width="60">
-        </h1>
-        
-        <div>
-                <center>
+    <head>
+        <meta charset="utf-8" />
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/app.js"></script>
+    </head>
+    <body>
+    
+    <h1>Tic-Tac-Toe
+      <img src="images/tictactoe.jpg" alt="tictactoe" height="60"width="60">
+    </h1>
+    <h3>player1:X</h3>
+    <h3>player2:O</h3>
+    
+    <div>
+            <center>
         <Table>
-          <tr>
-            <td id="cell_0_0" class="cell" onClick="clickCell(0,0);">&nbsp;</td>
-            <td id="cell_0_1" class="cell" onClick="JavaScript: clickCell(0,1);">&nbsp;</td>
-            <td id="cell_0_2" class="cell" onClick="JavaScript: clickCell(0,2);">&nbsp;</td>
-          </tr>
-            <tr>
-            <td id="cell_1_0" class="cell" onClick="JavaScript: clickCell(1,0);">&nbsp;</td>
-            <td id="cell_1_1" class="cell" onClick="JavaScript: clickCell(1,1);">&nbsp;</td>
-            <td id="cell_1_2" class="cell" onClick="JavaScript: clickCell(1,2);">&nbsp;</td>
-          </tr>
-            <tr>
-            <td id="cell_2_0" class="cell" onClick="JavaScript: clickCell(2,0);">&nbsp;</td>
-            <td id="cell_2_1" class="cell" onClick="JavaScript: clickCell(2,1);">&nbsp;</td>
-            <td id="cell_2_2" class="cell" onClick="JavaScript: clickCell(2,2);">&nbsp;</td>
-          </tr>
-          </table>
-        </center>
-          </div>
-        <center>
-        <input type=button onClick="Javascript: reset();" value="Reset" id="reset">
-          <br/><br/>
-        </center>
-        </body>
-        </html>
+      <tr> 
+        <td id="1" class="cell" onClick="JavaScript: clickCell(1);"ondblclick="demo(1)">&nbsp;</td>
+        <td id="2" class="cell" onClick="JavaScript: clickCell(2);"ondblclick="demo(2)">&nbsp;</td>
+        <td id="3" class="cell" onClick="JavaScript: clickCell(3);"ondblclick="demo(3)">&nbsp;</td>
+      </tr>
+        <tr>
+        <td id="4" class="cell" onClick="JavaScript: clickCell(4); "ondblclick="demo(4)">&nbsp;</td>
+        <td id="5" class="cell" onClick="JavaScript: clickCell(5); "ondblclick="demo(5)">&nbsp;</td>
+        <td id="6" class="cell" onClick="JavaScript: clickCell(6); "ondblclick="demo(6)">&nbsp;</td>
+      </tr>
+        <tr>
+        <td id="7" class="cell" onClick="JavaScript: clickCell(7);"ondblclick="demo(7)">&nbsp;</td>
+        <td id="8" class="cell" onClick="JavaScript: clickCell(8);"ondblclick="demo(8)">&nbsp;</td>
+        <td id="9" class="cell" onClick="JavaScript: clickCell(9);"ondblclick="demo(9)">&nbsp;</td>
+      </tr>
+      </table>
+    </center>
+      </div>
+    <center>
+    <button onclick="clean()" id="reset">Play Again</button>
+      <br/><br/>
+    </center>
+    </body>
+    </html>
