@@ -2,42 +2,60 @@
     <head>
         <meta charset="utf-8" />
         <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="js/app.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
-    <body>
-    
+    <body id="ib">
+    <div class="container fadeInUpBig">
     <h1>Tic-Tac-Toe
-      <img src="images/tictactoe.jpg" alt="tictactoe" height="60"width="60">
+      <img src="images/tictactoe.jpg" alt="tictactoe" height="60"width="60"><br><br>
     </h1>
-    <h3>player1:X</h3>
-    <h3>player2:O</h3>
-    
+    <div class="wongameclass">
+    <h3>X won :</h3><h4 id="xwoncount">0 times(s)</h4>
+    <h3>O won :</h3><h4 id="owoncount">0 times(s)</h4></div>
+      
+    <div class="divselect">
+    <center style="margin-right:180px">
+    <select id="myselect" class="form-control">
+      <option>x</option>
+      <option>o</option>
+    </select>
+  <br>
+    <button onclick="selectPlayer()" id="cb" class="btn btn-primary">Choose</button> <br>
+  </center>
+    </div>
     <div>
-            <center>
-        <Table>
+            <center style="margin-right:180px">
+        <Table class="row">
       <tr> 
-        <td id="1" class="cell" onClick="JavaScript: clickCell(1);"ondblclick="demo(1)">&nbsp;</td>
-        <td id="2" class="cell" onClick="JavaScript: clickCell(2);"ondblclick="demo(2)">&nbsp;</td>
-        <td id="3" class="cell" onClick="JavaScript: clickCell(3);"ondblclick="demo(3)">&nbsp;</td>
+        <td id="1" class="cell col-sm-4 col-md-4 col-lg-4" onClick="JavaScript: clickCell(1);"ondblclick="doubleClick(1)">&nbsp;</td>
+        <td id="2" class="cell col-sm-4 col-md-4 col-lg-4" onClick="JavaScript: clickCell(2);"ondblclick="doubleClick(2)">&nbsp;</td>
+        <td id="3" class="cell col-sm-4 col-md-4 col-lg-4" onClick="JavaScript: clickCell(3);"ondblclick="doubleClick(3)">&nbsp;</td>
       </tr>
         <tr>
-        <td id="4" class="cell" onClick="JavaScript: clickCell(4); "ondblclick="demo(4)">&nbsp;</td>
-        <td id="5" class="cell" onClick="JavaScript: clickCell(5); "ondblclick="demo(5)">&nbsp;</td>
-        <td id="6" class="cell" onClick="JavaScript: clickCell(6); "ondblclick="demo(6)">&nbsp;</td>
+        <td id="4" class="cell col-sm-4 col-md-4 col-lg-4" onClick="JavaScript: clickCell(4); "ondblclick="doubleClick(4)">&nbsp;</td>
+        <td id="5" class="cell col-sm-4 col-md-4 col-lg-4" onClick="JavaScript: clickCell(5); "ondblclick="doubleClick(5)">&nbsp;</td>
+        <td id="6" class="cell col-sm-4 col-md-4 col-lg-4" onClick="JavaScript: clickCell(6); "ondblclick="doubleClick(6)">&nbsp;</td>
       </tr>
         <tr>
-        <td id="7" class="cell" onClick="JavaScript: clickCell(7);"ondblclick="demo(7)">&nbsp;</td>
-        <td id="8" class="cell" onClick="JavaScript: clickCell(8);"ondblclick="demo(8)">&nbsp;</td>
-        <td id="9" class="cell" onClick="JavaScript: clickCell(9);"ondblclick="demo(9)">&nbsp;</td>
+        <td id="7" class="cell col-sm-4 col-md-4 col-lg-4" onClick="JavaScript: clickCell(7);"ondblclick="doubleClick(7)">&nbsp;</td>
+        <td id="8" class="cell col-sm-4 col-md-4 col-lg-4" onClick="JavaScript: clickCell(8);"ondblclick="doubleClick(8)">&nbsp;</td>
+        <td id="9" class="cell col-sm-4 col-md-4 col-lg-4" onClick="JavaScript: clickCell(9);"ondblclick="doubleClick(9)">&nbsp;</td>
       </tr>
       </table>
     </center>
       </div>
+      <br><br><br>
     <center>
     <button onclick="clean()" id="reset">Play Again</button>
       <br/><br/>
     </center>
+  </div>
     </body>
     </html>
