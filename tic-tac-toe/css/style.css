@@ -1,17 +1,18 @@
 body {
-  background-image: url("../background.jpg");
+  background-image: url("../back1.jpg");
   background-size: cover;
 }
 
 h1 {
     text-align: center;
-    font-family: 'TimesNewRoman';
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 53px;
 }
 h3{
   text-align: center;
-  font-family: 'TimesNewRoman';
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-size: 30px;
+  display: inline;
 }
 div {
   text-align: center;
@@ -19,141 +20,39 @@ div {
   text-align: center;
   margin: auto;
 }
-body {
-  background-image: url("background.jpg");
-  background-size: cover;
-}
-
-h1 {
-    text-align: center;
-    font-family: 'TimesNewRoman';
-    font-size: 53px;
-}
-h3{
-  text-align: center;
-  font-family: 'TimesNewRoman';
-  font-size: 30px;
-}
-div {
-  text-align: center;
-  margin: 0px auto;
-  text-align: center;
-  margin: auto;
-}
-.cell {
-  width:80px;
-  height:80px;
-  border: 5px solid #000000;
-  background: #FFFFFF;
-  font-size: 46pt;
-  font-family: arial;
-  font-weight: bold;
-  text-align: center;
-  margin: auto;
-
-}
-
-fieldset {
+fieldset
+{
   text-align: center;
   margin: auto;
 }
 
 .cell:hover {
-  background: #C2DBFC;
   text-align: center;
-}
-body {
-  background-image: url("background.jpg");
-  background-size: cover;
-}
-
-h1 {
-    text-align: center;
-    font-family: 'TimesNewRoman';
-    font-size: 53px;
-}
-h3{
-  text-align: center;
-  font-family: 'TimesNewRoman';
-  font-size: 30px;
-}
-div {
-  text-align: center;
-  margin: 0px auto;
-  text-align: center;
-  margin: auto;
-}body {
-  background-image: url("background.jpg");
-  background-size: cover;
-}
-
-h1 {
-    text-align: center;
-    font-family: 'TimesNewRoman';
-    font-size: 53px;
-}
-h3{
-  text-align: center;
-  font-family: 'TimesNewRoman';
-  font-size: 30px;
-}
-div {
-  text-align: center;
-  margin: 0px auto;
-  text-align: center;
-  margin: auto;
-}
-body {
-  background-image: url("../background.jpg");
-  background-size: cover;
-}
-
-h1 {
-    text-align: center;
-    font-family: 'TimesNewRoman';
-    font-size: 53px;
-}
-h3{
-  text-align: center;
-  font-family: 'TimesNewRoman';
-  font-size: 30px;
-}
-div {
-  text-align: center;
-  margin: 0px auto;
-  text-align: center;
-  margin: auto;
 }
 .cell {
     width:60px;
     height:100px;
-    border: 01px solid grey;
-    background: #FFFFFF;
+    border: 5px solid black;
+    background:transparent;
     font-size: 46pt;
     font-family: arial;
     font-weight: bold;
     text-align: center;
     margin: auto;
-  
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
 }
 
-fieldset {
-  text-align: center;
-  margin: auto;
-}
-
-.cell:hover {
-  background: #C2DBFC;
-  text-align: center;
-}
 #reset{
   
-  background-color: lightblue;
+  background-color: rgb(42, 8, 196);
   color:white;
-  border-radius: 10px 10px 10px 10px;
+  padding: 5px;
+  border-radius: 10px 8px 10px 8px;
   text-align: center;
   display: inline-block;
-  font-size:2vw;
+  font-size:1vw;
+  margin-right:100px;
 }
 table{
   width:25vw;
@@ -172,131 +71,78 @@ table{
     float:left;
 }
 
-fieldset {
-  text-align: center;
-  margin: auto;
+.one {
+  border-top: transparent;
+  border-left: transparent;
+}
+.four {
+  border-left: transparent;
+}
+.seven {
+  border-left: transparent;
+  border-bottom: transparent;
+
+}
+.two {
+  border-top: transparent;
+
+}
+.eight {
+  border-bottom: transparent;
+
 }
 
-.cell:hover {
-  background: #C2DBFC;
-  text-align: center;
-}
-#reset{
-  
-  background-color:black;
-  border: none;
-  color:white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size:2vw;
-}
-table{
-  width:30vw;
-  height:50vh;
-  position: relative;
-  align-content: center;
-}
-.divselect {
-  position: relative;
-  top: -19px;
-  width: 404px;
-  margin-right: 335px;
-}
-.wongameclass {
-    position:relative;
-    float:left;
+.three {
+  border-top: transparent;
+  border-right: transparent;
 }
 
-fieldset {
-  text-align: center;
-  margin: auto;
-}
+.six {
+  border-right: transparent;
 
-.cell:hover {
-  background: #C2DBFC;
-  text-align: center;
 }
-#reset{
-  
-  background-color:black;
-  border: none;
-  color:white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size:2vw;
-}
-table{
-  width:30vw;
-  height:50vh;
-  position: relative;
-  align-content: center;
-}
-.divselect {
-  position: relative;
-  top: -19px;
-  width: 404px;
-  margin-right: 335px;
-}
-.wongameclass {
-    position:relative;
-    float:left;
-}
-table{
-  width:30vw;
-  height:50vh;
-  position: relative;
-  align-content: center;
-}
-.divselect {
-  position: relative;
-  top: -19px;
-  width: 404px;
-  margin-right: 335px;
-}
-.wongameclass {
-    position:relative;
-    float:left;
-}
+.nine {
+  border-right: transparent;
+  border-bottom: transparent;
 
-fieldset {
+}
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
   text-align: center;
-  margin: auto;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
 }
-
-.cell:hover {
-  background: #C2DBFC;
-  text-align: center;
+.close-button:hover {
+  background-color: darkgray;
 }
-#reset{
-  
-  background-color:black;
-  border: none;
-  color:white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size:2vw;
-}
-table{
-  width:30vw;
-  height:50vh;
-  position: relative;
-  align-content: center;
-}
-.divselect {
-  position: relative;
-  top: -19px;
-  width: 404px;
-  margin-right: 335px;
-}
-.wongameclass {
-    position:relative;
-    float:left;
-    font-weight: bold;
-    font-size: 30px;
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }

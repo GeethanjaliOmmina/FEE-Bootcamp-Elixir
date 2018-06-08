@@ -1,14 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body style="background-color:rgba(255, 217, 0, 0.199)">
-    <center>
-    <img src="homebg.gif" width="1285px" style="display: contain;"  onclick="window.location='index.html';">>
-   </center>
-</body>
-</html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/app.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body id="ib">
+    <div class="container fadeInUpBig">
+    <h1 class="animated fadeInLeftBig">Tic-Tac-Toe
+      <img src="images/tictactoe.jpg" alt="tictactoe" height="60"width="60"><br><br>
+    </h1>
+    <div class="wongameclass">
+    <h3>X won :</h3><h4 id="xwoncount">0 times(s)</h4><br><br>
+    <h3>O won :</h3><h4 id="owoncount">0 times(s)</h4></div>
+      
+    <div class="divselect">
+    <center style="margin-right:180px">
+    <select id="myselect" class="form-control">
+      <option>x</option>
+      <option>o</option>
+    </select>
+  <br>
+    <button onclick="selectPlayer()" id="cb" class="btn btn-primary animated bounceIn">Choose</button> <br>
+  </center>
+    </div>
+    <div>
+            <center style="margin-right:180px">
+        <Table class="row animated rotateIn">
+      <tr> 
+        <td id="1" class="cell col-sm-4 col-md-4 col-lg-4 one" onClick="JavaScript: clickCell(1);"ondblclick="doubleClick(1)">&nbsp;</td>
+        <td id="2" class="cell col-sm-4 col-md-4 col-lg-4 two" onClick="JavaScript: clickCell(2);"ondblclick="doubleClick(2)">&nbsp;</td>
+        <td id="3" class="cell col-sm-4 col-md-4 col-lg-4 three" onClick="JavaScript: clickCell(3);"ondblclick="doubleClick(3)">&nbsp;</td>
+      </tr>
+        <tr>
+        <td id="4" class="cell col-sm-4 col-md-4 col-lg-4 four" onClick="JavaScript: clickCell(4); "ondblclick="doubleClick(4)">&nbsp;</td>
+        <td id="5" class="cell col-sm-4 col-md-4 col-lg-4 five" onClick="JavaScript: clickCell(5); "ondblclick="doubleClick(5)">&nbsp;</td>
+        <td id="6" class="cell col-sm-4 col-md-4 col-lg-4 six" onClick="JavaScript: clickCell(6); "ondblclick="doubleClick(6)">&nbsp;</td>
+      </tr>
+        <tr>
+        <td id="7" class="cell col-sm-4 col-md-4 col-lg-4 seven" onClick="JavaScript: clickCell(7);"ondblclick="doubleClick(7)">&nbsp;</td>
+        <td id="8" class="cell col-sm-4 col-md-4 col-lg-4 eight" onClick="JavaScript: clickCell(8);"ondblclick="doubleClick(8)">&nbsp;</td>
+        <td id="9" class="cell col-sm-4 col-md-4 col-lg-4 nine" onClick="JavaScript: clickCell(9);"ondblclick="doubleClick(9)">&nbsp;</td>
+      </tr>
+      </table>
+    </center>
+      </div>
+      <br><br><br>
+    <button class="btn animated swing" onclick="clean()" id="reset">Play Again</button>
+      <br/><br/>
+  </div>
+    </body>
+    </html>
